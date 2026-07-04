@@ -181,14 +181,22 @@ Une telle situation impose souvent le recours à des techniques de rééquilibra
 Dans notre cas, la proportion de **30 % de fraude** offre une base d'apprentissage particulièrement favorable.
 
 Le futur modèle pourra apprendre de manière équilibrée les caractéristiques des deux classes sans introduire de biais algorithmique majeur, ce qui constitue un avantage important pour la phase de modélisation.
+
+<p align="center">
+  <img src="images/Capture d’écran du 2026-07-04 19-12-17.png" width="750"/>
+</p>
+
 # 7. Cartographie des Corrélations (Graphique 2)
 
 L'étude des corrélations constitue une étape essentielle de l'Analyse Exploratoire des Données (EDA). Elle permet de mesurer l'intensité des relations linéaires entre les différentes variables du jeu de données et d'identifier celles qui possèdent le plus fort pouvoir prédictif vis-à-vis de la fraude.
 
 Au-delà de la simple compréhension des données, cette analyse permet également de détecter les variables redondantes susceptibles de perturber les futurs modèles de Machine Learning.
 
-L'analyse de la matrice de corrélation met ainsi en évidence deux enseignements majeurs : l'existence de variables fortement liées au phénomène de fraude et la présence de phénomènes de colinéarité entre certaines caractéristiques.
+<p align="center">
+  <img src="images/Capture d’écran du 2026-07-04 19-12-02.png" width="750"/>
+</p>
 
+L'analyse de la matrice de corrélation met ainsi en évidence deux enseignements majeurs : l'existence de variables fortement liées au phénomène de fraude et la présence de phénomènes de colinéarité entre certaines caractéristiques.
 ---
 
 ## 7.1 Les Principaux Prédicteurs de la Fraude
@@ -230,7 +238,12 @@ Les graphiques de densité (KDE) et les Boxplots permettent d'observer la distri
 Contrairement à une simple analyse descriptive, ces visualisations mettent en évidence les ruptures statistiques qui caractérisent les fraudeurs.
 
 Quatre comportements distinctifs apparaissent clairement.
-
+<p align="center">
+  <img src="images/Capture d’écran du 2026-07-04 19-11-51.png" width="750"/>
+</p>
+<p align="center">
+  <img src="images/Capture d’écran du 2026-07-04 19-11-25.png" width="750"/>
+</p>
 ---
 
 ## 8.1 La Politique de la « Carte Jetable » (caller_age_days)
@@ -309,6 +322,9 @@ Ces deux indicateurs démontrent qu'il s'agit en réalité de centres d'appels, 
 Cette observation souligne qu'un système de détection performant ne peut jamais se limiter au volume d'activité.
 
 Le futur modèle devra impérativement croiser plusieurs variables comportementales afin d'éviter de pénaliser les clients légitimes à forte activité.
+<p align="center">
+  <img src="images/Capture d’écran du 2026-07-04 19-11-44.png" width="750"/>
+</p>
 
 ---
 
@@ -331,6 +347,9 @@ Par ailleurs, ces numéros situés au cœur des clusters de fraude présentent �
 Cette approche montre que la fraude peut être détectée non seulement grâce au comportement individuel d'un numéro, mais également grâce à sa position au sein du réseau téléphonique.
 
 L'intégration d'informations relationnelles constitue ainsi un levier majeur pour améliorer les performances d'un système de détection.
+<p align="center">
+  <img src="images/Capture d’écran du 2026-07-04 19-11-37.png" width="750"/>
+</p>
 
 ---
 
@@ -355,6 +374,11 @@ Ils ne cherchent pas à imiter progressivement les utilisateurs légitimes ; ils
 Cette observation conduit à une conclusion importante.
 
 Dans ce contexte, le futur modèle de Machine Learning devra privilégier la détection de comportements monotones et répétitifs plutôt que la recherche de variations soudaines de comportement.
+<p align="center">
+  <img src="images/Capture d’écran du 2026-07-04 19-11-31.png" width="750"/>
+</p>
+
+
 # 12. Les Métriques Statistiques Calculées : Définitions, Utilités et Nécessités
 
 L'Analyse Exploratoire des Données (EDA) ne repose pas uniquement sur l'observation des graphiques. Elle s'appuie également sur un ensemble de calculs statistiques permettant de transformer un jeu de données brut en informations exploitables.
