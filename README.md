@@ -7,6 +7,11 @@ L'objectif de cette analyse est de disséquer un jeu de données composé de **1
 À travers une démarche d'Analyse Exploratoire des Données (**Exploratory Data Analysis – EDA**), cette étude vise à comprendre la structure des données, à identifier les caractéristiques discriminantes des comportements frauduleux et à évaluer la faisabilité d'un futur modèle de Machine Learning dédié à la détection automatique de la fraude.
 
 L'analyse des différents indicateurs statistiques et graphiques montre qu'une combinaison intelligente de critères comportementaux, temporels et relationnels (graphes) permet d'isoler les appels frauduleux avec une efficacité quasi chirurgicale tout en protégeant les clients professionnels légitimes présentant un volume d'activité élevé.
+## Téléchargement du jeu de données
+
+Le jeu de données est disponible sur Kaggle :
+
+**📥 [Telecom Fraud Detection Dataset](https://www.kaggle.com/datasets/velvetcrystal/telecom-fraud-detection-dataset/data)**
 
 ---
 
@@ -159,7 +164,7 @@ Ces différentes caractéristiques constituent les principaux indicateurs étudi
 
 # 6. Analyse Quantitative du Jeu de Données
 
-## 6.1 Équilibre des Classes (Graphique 1)
+## 6.1 Équilibre des Classes 
 
 La première étape de l'analyse consiste à examiner la répartition de la variable cible.
 
@@ -186,7 +191,7 @@ Le futur modèle pourra apprendre de manière équilibrée les caractéristiques
   <img src="images/Capture d’écran du 2026-07-04 19-12-17.png" width="750"/>
 </p>
 
-# 7. Cartographie des Corrélations (Graphique 2)
+# 7. Cartographie des Corrélations 
 
 L'étude des corrélations constitue une étape essentielle de l'Analyse Exploratoire des Données (EDA). Elle permet de mesurer l'intensité des relations linéaires entre les différentes variables du jeu de données et d'identifier celles qui possèdent le plus fort pouvoir prédictif vis-à-vis de la fraude.
 
@@ -231,7 +236,7 @@ Cette observation justifie pleinement l'analyse plus approfondie réalisée dans
 
 ---
 
-# 8. Portrait-Robot du Fraudeur (Graphiques 3 et 6)
+# 8. Portrait-Robot du Fraudeur 
 
 Les graphiques de densité (KDE) et les Boxplots permettent d'observer la distribution des principales variables comportementales pour les appels légitimes et frauduleux.
 
@@ -300,7 +305,7 @@ La combinaison d'un fort **Sequential Dialing Score** et d'un **Receiver Block R
 
 ---
 
-# 9. Gestion des Cas Limites et Réduction des Faux Positifs (Graphique 4)
+# 9. Gestion des Cas Limites et Réduction des Faux Positifs 
 
 L'un des principaux défis des systèmes automatiques de détection de fraude consiste à limiter les faux positifs.
 
@@ -328,8 +333,7 @@ Le futur modèle devra impérativement croiser plusieurs variables comportementa
 
 ---
 
-# 10. L'Approche Réseau : L'Apport de l'Intelligence Graphe (Graphique 5)
-
+# 10. L'Approche Réseau : L'Apport de l'Intelligence Graphe 
 La fraude moderne fonctionne rarement de manière isolée.
 
 Les fraudeurs partagent fréquemment des infrastructures communes et forment des groupes fortement connectés au sein des réseaux de communication.
@@ -353,7 +357,7 @@ L'intégration d'informations relationnelles constitue ainsi un levier majeur po
 
 ---
 
-# 11. Analyse Temporelle et Comportementale (Graphique 7)
+# 11. Analyse Temporelle et Comportementale 
 
 Le Graphique 7 compare la durée de l'appel courant avec la durée moyenne historique de chaque utilisateur.
 
